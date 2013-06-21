@@ -1,0 +1,41 @@
+{
+  "name": "gl-vao",
+  "version": "0.0.0",
+  "description": "Vertex array object wrapper/shim for WebGL",
+  "main": "vao.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "webglew": "~0.0.0"
+  },
+  "devDependencies": {
+    "gl-buffer": "~0.0.0",
+    "gl-now": "~0.0.0",
+    "simple-2d-shader": "~0.0.0"  
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/gl-vao.git"
+  },
+  "keywords": [
+    "vertex",
+    "array",
+    "object",
+    "oes",
+    "extension",
+    "webgl",
+    "gl",
+    "graphics"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "49233a7e29c1507cc25173f3e333f0859081fc81",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/gl-vao/issues"
+  }
+}
