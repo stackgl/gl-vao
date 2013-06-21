@@ -52,7 +52,7 @@ shell.on("gl-render", function(t) {
 
 Assuming everything worked, here is what it should look like:
 
-<img src=images/screenshot.png>
+<img src=https://github.com/mikolalysenko/simple-2d-shader/blob/master/images/simple2dshader.png>
 
 ## Install
 
