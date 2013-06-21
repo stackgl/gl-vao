@@ -52,7 +52,7 @@ shell.on("gl-render", function(t) {
 
 Assuming everything worked, here is what it should look like:
 
-<img src=https://raw.github.com/mikolalysenko/simple-2d-shader/master/images/simple2dshader.png>
+<img src=https://raw.github.com/mikolalysenko/gl-vao/master/images/screenshot.png>
 
 ## Install
 
