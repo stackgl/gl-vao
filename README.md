@@ -4,6 +4,8 @@ gl-vao
 
 ## Example
 
+[Try out the demo in your browser](http://mikolalysenko.github.io/gl-vao/)
+
 ```javascript
 var shell = require("gl-now")()
 var createBuffer = require("gl-buffer")
@@ -47,6 +49,10 @@ shell.on("gl-render", function(t) {
   vao.unbind()
 })
 ```
+
+Assuming everything worked, here is what it should look like:
+
+<img src=images/screenshot.png>
 
 ## Install
 
