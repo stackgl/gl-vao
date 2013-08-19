@@ -79,8 +79,8 @@ Creates a vertex array object
     + `size` the size of the attribute (default 4)
     + `type` the type of the attribute (default `gl.FLOAT`)
     + `normalized` a flag that checks whether the attribute should be normalized or not
-    + `stride` the stride of the attribute (default 0)
-    + `offset` offset to the start of the attribute in the buffer (default 0)
+    + `stride` the stride of the attribute **in bytes** (default 0)
+    + `offset` offset to the start of the attribute in the buffer **in bytes** (default 0)
 
 ### `vao.bind()`
 Binds the vertex array object to the active vertex state.
