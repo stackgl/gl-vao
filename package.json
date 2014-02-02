@@ -1,16 +1,16 @@
 {
   "name": "gl-vao",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Vertex array object wrapper/shim for WebGL",
   "main": "vao.js",
   "directories": {
     "example": "example"
   },
   "dependencies": {
-    "webglew": "~0.0.0"
+    "webglew": "^0.0.0"
   },
   "devDependencies": {
-    "gl-buffer": "~0.0.0",
+    "gl-buffer": "^0.0.0",
     "gl-now": "~0.0.0",
     "simple-2d-shader": "~0.0.0"  
   },

@@ -4,7 +4,7 @@ var webglew = require("webglew")
 var createVAONative = require("./lib/vao-native.js")
 var createVAOEmulated = require("./lib/vao-emulated.js")
 
-function createVAO(gl, elements, attributes) {
+function createVAO(gl, attributes, elements) {
   var ext = webglew(gl).OES_vertex_array_object
   var vao
   if(ext) {
@@ -12,7 +12,7 @@ function createVAO(gl, elements, attributes) {
   } else {
     vao = createVAOEmulated(gl)
   }
-  vao.update(elements, attributes)
+  vao.update(attributes, elements)
   return vao
 }
 

@@ -11,7 +11,7 @@ shell.on("gl-init", function() {
   shader = createSimpleShader(gl)
   
   //Create vertex array object
-  vao = createVAO(gl, null, [
+  vao = createVAO(gl, [
     { "buffer": createBuffer(gl, [-1, 0, 0, -1, 1, 1]),
       "type": gl.FLOAT,
       "size": 2,
@@ -21,6 +21,8 @@ shell.on("gl-init", function() {
     },
     [0.8, 1, 0.5]
   ])
+
+  gl.vertexAttrib3f(1, 1, 0, 0)
 })
 
 shell.on("gl-render", function(t) {

@@ -68,11 +68,10 @@ To compile demos in for your browser try [browserify](https://github.com/substac
 var createVAO = require("gl-vao")
 ```
 
-### `var vao = createVAO(gl[, elements, attributes])`
+### `var vao = createVAO(gl, attributes[, elements])`
 Creates a vertex array object
 
 * `gl` is the gl context in which the vertex array object is created
-* `elements` is a buffer created using [`gl-buffer`](https://github.com/mikolalysenko/gl-buffer) encoding the state of the vertex elements
 * `attributes` is an array of objects that give the attributes bound to particular locations starting at 0.  Each of these attributes is either an array-like object of length 4 or less representing a constant attribute value, or else it is an object with the following properties that correspond to the parameters passed to [`gl.vertexAttribPointer`](http://www.khronos.org/opengles/sdk/docs/man/xhtml/glVertexAttribPointer.xml)
 
     + `buffer` a [`gl-buffer`](https://github.com/mikolalysenko/gl-buffer) object encoding a webgl buffer
@@ -82,6 +81,9 @@ Creates a vertex array object
     + `stride` the stride of the attribute **in bytes** (default 0)
     + `offset` offset to the start of the attribute in the buffer **in bytes** (default 0)
 
+* `elements` is a buffer created using [`gl-buffer`](https://github.com/mikolalysenko/gl-buffer) encoding the state of the vertex elements
+
+
 ### `vao.bind()`
 Binds the vertex array object to the active vertex state.
 
@@ -90,7 +92,7 @@ Unbinds the vertex array object.
 
 **Note** You should call this method before switching back to using vertex arrays and buffers as usual.  Failing to do so can cause the state of the vertex array object to become corrupted.  However, it is acceptable to skip the unbind step if another vertex array object is immediately bound.
 
-### `vao.update(elements, attributes)`
+### `vao.update(attributes[, elements])`
 Updates the contents of the vertex array object using the same syntax and conventions as the constructor.
 
 ### `vao.dispose()`
