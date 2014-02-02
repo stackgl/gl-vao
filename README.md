@@ -20,7 +20,7 @@ shell.on("gl-init", function() {
   shader = createSimpleShader(gl)
   
   //Create vertex array object
-  vao = createVAO(gl, null, [
+  vao = createVAO(gl, [
     { "buffer": createBuffer(gl, [-1, 0, 0, -1, 1, 1]),
       "type": gl.FLOAT,
       "size": 2,
