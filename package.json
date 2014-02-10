@@ -7,7 +7,7 @@
     "example": "example"
   },
   "dependencies": {
-    "webglew": "^0.0.0"
+    "webglew": "0.0.0"
   },
   "devDependencies": {
     "gl-buffer": "^0.0.0",
