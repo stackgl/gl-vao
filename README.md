@@ -43,7 +43,7 @@ shell.on("gl-render", function(t) {
   shader.attributes.color.location = 1
 
   //Draw stuff
-  gl.drawArrays(gl.TRIANGLES, 0, 3)
+  vao.draw(gl.TRIANGLES, 3)
   
   //Unbind vertex array when fini
   vao.unbind()
@@ -84,6 +84,7 @@ Creates a vertex array object
 * `elements` is a buffer created using [`gl-buffer`](https://github.com/mikolalysenko/gl-buffer) encoding the state of the vertex elements
 
 
+
 ### `vao.bind()`
 Binds the vertex array object to the active vertex state.
 
@@ -92,11 +93,19 @@ Unbinds the vertex array object.
 
 **Note** You should call this method before switching back to using vertex arrays and buffers as usual.  Failing to do so can cause the state of the vertex array object to become corrupted.  However, it is acceptable to skip the unbind step if another vertex array object is immediately bound.
 
+### `vao.draw(mode, count[, offset])`
+Draws the vertex array object.
+
+* `mode` is the mode to use when drawing the buffer, for example `gl.TRIANGLES`, `gl.LINES`, etc.
+* `count` is the number of vertices to draw.
+* `offset` is the offset to start drawing from.  Default `0`
+
 ### `vao.update(attributes[, elements])`
 Updates the contents of the vertex array object using the same syntax and conventions as the constructor.
 
 ### `vao.dispose()`
 Destroys the vertex array object and releases all of its resources.
+
 
 ## Credits
 (c) 2013 Mikola Lysenko. MIT License

@@ -36,7 +36,7 @@ shell.on("gl-render", function(t) {
   shader.attributes.color.location = 1
 
   //Draw stuff
-  gl.drawArrays(gl.TRIANGLES, 0, 3)
+  vao.draw(gl.TRIANGLES, 3)
   
   //Unbind vertex array when fini
   vao.unbind()
