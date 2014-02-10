@@ -84,7 +84,6 @@ Creates a vertex array object
 * `elements` is a buffer created using [`gl-buffer`](https://github.com/mikolalysenko/gl-buffer) encoding the state of the vertex elements
 
 
-
 ### `vao.bind()`
 Binds the vertex array object to the active vertex state.
 
