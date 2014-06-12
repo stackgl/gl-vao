@@ -67,7 +67,7 @@ shell.on("gl-render", function(t) {
 
 Assuming everything worked, here is what it should look like:
 
-<img src="https://modules.gl/gl-vao/screenshot.png">
+<img src="http://modules.gl/gl-vao/screenshot.png">
 
 ## Install
 
