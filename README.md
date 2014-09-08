@@ -83,7 +83,7 @@ To compile demos in for your browser try [browserify](https://github.com/substac
 var createVAO = require("gl-vao")
 ```
 
-### `var vao = createVAO(gl, attributes[, elements])`
+### `var vao = createVAO(gl, attributes[, elements][, elementsType])`
 Creates a vertex array object
 
 * `gl` is the gl context in which the vertex array object is created
@@ -97,6 +97,8 @@ Creates a vertex array object
     + `offset` offset to the start of the attribute in the buffer **in bytes** (default 0)
 
 * `elements` is a buffer created using [`gl-buffer`](https://github.com/mikolalysenko/gl-buffer) encoding the state of the vertex elements
+
+* `elementsType` the type of data contained within the element buffer, if given. Defaults to `gl.UNSIGNED_SHORT`. Acceptable values are `gl.UNSIGNED_BYTE`, `gl.UNSIGNED_SHORT`. If the `OES_element_index_uint` extension is available and active, `gl.UNSIGNED_INT` may also be used.
 
 ### `vao.bind()`
 Binds the vertex array object to the active vertex state.
@@ -113,7 +115,7 @@ Draws the vertex array object.
 * `count` is the number of vertices to draw.
 * `offset` is the offset to start drawing from.  Default `0`
 
-### `vao.update(attributes[, elements])`
+### `vao.update(attributes[, elements][, elementsType])`
 Updates the contents of the vertex array object using the same syntax and conventions as the constructor.
 
 ### `vao.dispose()`
