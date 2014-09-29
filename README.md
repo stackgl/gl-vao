@@ -4,7 +4,7 @@ WebGL vertex array object wrapper/polyfill
 
 ## Example
 
-[Try out the demo in your browser](http://modules.gl/gl-vao/)
+[Try out the demo in your browser](http://stack.gl/gl-vao/)
 
 ```javascript
 var shell = require("gl-now")()
@@ -67,7 +67,7 @@ shell.on("gl-render", function(t) {
 
 Assuming everything worked, here is what it should look like:
 
-<img src="http://modules.gl/gl-vao/screenshot.png">
+<img src="http://stack.gl/gl-vao/screenshot.png">
 
 ## Install
 
