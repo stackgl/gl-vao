@@ -16,11 +16,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "beefy --open example/example.js -- --transform glslify"
+    "start": "beefy example/example.js --open -- --transform glslify"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikolalysenko/gl-vao.git"
+    "url": "git://github.com/stackgl/gl-vao.git"
   },
   "keywords": [
     "vertex",
@@ -37,6 +37,6 @@
   "readmeFilename": "README.md",
   "gitHead": "49233a7e29c1507cc25173f3e333f0859081fc81",
   "bugs": {
-    "url": "https://github.com/mikolalysenko/gl-vao/issues"
+    "url": "https://github.com/stackgl/gl-vao/issues"
   }
 }
