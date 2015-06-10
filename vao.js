@@ -1,11 +1,10 @@
 "use strict"
 
-var webglew = require("webglew")
 var createVAONative = require("./lib/vao-native.js")
 var createVAOEmulated = require("./lib/vao-emulated.js")
 
 function createVAO(gl, attributes, elements, elementsType) {
-  var ext = webglew(gl).OES_vertex_array_object
+  var ext = gl.getExtension('OES_vertex_array_object')
   var vao
   if(ext) {
     vao = createVAONative(gl, ext)
